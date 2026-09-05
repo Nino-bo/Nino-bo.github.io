@@ -2,7 +2,7 @@
 layout: default
 home: true
 ---
-<section class="intro"><div class="eyebrow">日常 · 随笔 · 片刻</div><h1>日子缓缓，<br>文字慢慢。</h1><p>把平凡的日子，写成值得记住的片段。<br>这里是 Nino 的散文簿，欢迎你停留片刻。</p></section>
-<section id="essays" aria-labelledby="essays-title"><h2 class="section-label" id="essays-title">散文与随笔</h2>
+<section class="intro"><div class="eyebrow">· 随笔 ·</div><h1>自留地，<br>文字慢慢。</h1></section>
+<section id="essays" aria-labelledby="essays-title"><h2 class="section-label" id="essays-title">随笔</h2>
 {% for post in site.posts %}<article class="entry"><time class="meta" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y.%m.%d' }}</time><div><h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2><p>{{ post.excerpt | strip_html | truncate: 110 }}</p><a class="read" href="{{ post.url | relative_url }}">读这一篇 →</a></div></article>{% else %}<p>第一篇文字，正在路上。</p>{% endfor %}
 </section>
