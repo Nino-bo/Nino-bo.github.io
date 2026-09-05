@@ -1,1 +1,12 @@
-
+title: Nino 的散文簿
+description: 把平凡的日子，写成值得记住的片段。
+lang: zh-CN
+timezone: Asia/Shanghai
+url: "https://nino-bo.github.io"
+baseurl: ""
+permalink: /essays/:title/
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
